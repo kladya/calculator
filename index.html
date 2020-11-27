@@ -10,40 +10,38 @@
 <body>
     <main>
         <div class="calculator">
-            <div class="input-container row row--1">
-                <input class="input cell" data-row="1" data-cell="0" type="text">
+            <div class="display-container row row--1">
+                <input class="display cell" data-row="1" data-cell="0" type="text">
             </div>
             <div class="operators row row--2">
                 <button class="operator cell" data-row="2" data-cell="+">+</button>
                 <button class="operator cell" data-row="2" data-cell="-">-</button>
-                <button class="operator cell" data-row="2" data-cell="x">x</button>
-                <button class="operator cell" data-row="2" data-cell="/">/</button>
+                <button class="operator cell" data-row="2" data-cell="*">x</button>
+                <button class="operator cell" data-row="2" data-cell="/">÷</button>
             </div>
             <div class="number-keys">
                 <div class="operands-container">
-                    <div class="operands row row--3">
-                        <button class="operand cell" data-row="3" data-cell="7">7</button>
-                        <button class="operand cell" data-row="3" data-cell="8">8</button>
-                        <button class="operand cell" data-row="3" data-cell="9">9</button>
+                    <div class="operands column column--1">
+                        <button class="operand cell" data-column="1" data-cell="7">7</button>
+                        <button class="operand cell" data-column="1" data-cell="4">4</button>
+                        <button class="operand cell" data-column="1" data-cell="1">1</button>
+                        <button class="operand cell" data-column="1" data-cell="0">0</button>
                     </div>
-                    <div class="operands row row--4">
-                        <button class="operand cell" data-row="4" data-cell="4">4</button>
-                        <button class="operand cell" data-row="4" data-cell="5">5</button>
-                        <button class="operand cell" data-row="4" data-cell="6">6</button>
+                    <div class="operands column column--2">
+                        <button class="operand cell" data-column="2" data-cell="8">8</button>
+                        <button class="operand cell" data-column="2" data-cell="5">5</button>
+                        <button class="operand cell" data-column="2" data-cell="2">2</button>
+                        <button class="operand cell" data-column="2" data-cell=".">.</button>
                     </div>
-                    <div class="operands row row--5">
-                        <button class="operand cell" data-row="5" data-cell="1">1</button>
-                        <button class="operand cell" data-row="5" data-cell="2">2</button>
-                        <button class="operand cell" data-row="5" data-cell="3">3</button>
-                    </div>
-                    <div class="operands row row--6">
-                        <button class="operand cell" data-row="6" data-cell="0">0</button>
-                        <button class="operand point cell" data-row="6" data-cell=".">.</button>
-                        <button class="operand cell" data-row="6" data-cell="C">C</button>
+                    <div class="operands column column--3">
+                        <button class="operand cell" data-column="3" data-cell="9">9</button>
+                        <button class="operand cell" data-column="3" data-cell="6">6</button>
+                        <button class="operand cell" data-column="3" data-cell="3">3</button>
+                        <button class="operand cell" data-column="3" data-cell="C">C</button>
                     </div>
                 </div>
-                <div class="equal-container">
-                    <button class="equal cell" data-row="3" data-cell="=">=</button>
+                <div class="equals-container column column--4">
+                    <button class="equals cell" data-column="4" data-cell="=">=</button>
                 </div>
             </div>
         </div>

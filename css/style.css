@@ -9,40 +9,59 @@ body {
 main {
     display: flex;
     justify-content: center;
-    margin: 8%;
 }
 
 .calculator {
+    margin: 25vh 0; 
     background-color: #ffffff;
     border: 1px solid #b4b0b0;
     border-radius: 1%;
-    padding: 1rem;
+    padding: .6rem;
+    width: 23%;
 }
 
-.input-container {
-    display: flex; 
+@media screen and (max-width: 768px) {
+	.calculator {
+		width: 50%;
+	}
+} 
+
+@media screen and (max-width: 425px) {
+	.calculator {
+		width: 100%;
+	}
+} 
+
+.display-container {
+    display: flex;  
 }
 
 .cell {
-    padding: 1rem 2rem;
-    margin: .8rem;
+    border-radius: 3%;
+    border: 1px solid #b4b0b0;
+    margin: .4rem; 
     cursor: pointer;
     outline-color:  #858282;
+    font-size: 1.5rem;
+    padding: .3rem;
 }
 
 .cell:hover {
     background-color:  #858282;
 }
 
-.input {
-    flex: auto;
+.display {
     border: 1px solid#b4b0b0;
     border-radius: 1%;
     cursor: text;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    text-align: right;
+    color: #757474;
+    padding: .5rem;
+    width: 100%;  
 }
 
-.input:hover {
+.display:hover {
     background-color: #fff;
 }
 
@@ -51,11 +70,8 @@ main {
 }
 
 .operator {
-    flex: auto;
+    flex: 25%; 
     background-color: #cecaca;
-    border: 1px solid #b4b0b0;
-    border-radius: 3%;
-    font-weight: 600;
 }
 
 .number-keys {
@@ -63,38 +79,34 @@ main {
 }
 
 .operands-container {
-    flex: auto;
+    display: flex;
+    flex: 75%;
 }
 
 .operands {
     display: flex;
+    flex-direction: column;
+    flex: 25%;
 }
 
 .operand {
-    flex: auto;
     background-color: #f0f0f0;
-    border: 1px solid #b4b0b0;
-    border-radius: 3%;
 }
 
-.point {
-    padding: 0 2.15rem;
-    font-weight: 800;
+.equals-container {
+    display: flex; 
+    flex: 25%;
 }
 
-.equal-container {
-    display: flex;
-}
-
-.equal {
+.equals {
+    flex: 25%;
     background-color: #216ad6;
     color: #fff;
     border: 1px solid #b4b0b0;
     border-radius: 2%;
     outline-color: #031f4b;
-    font-weight: 700;
 }
 
-.equal:hover {
+.equals:hover {
     background-color:#1750a7;
 }
